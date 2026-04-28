@@ -92,7 +92,7 @@ fun TelaDadosViagem() {
                 }
 
             // Cria uma Intent para abrir a SegundaTela e envia os dados da viagem (destino, dias e orçamento) como parâmetros
-                val intent = Intent(contexto, SegundaTela::class.java)
+                val intent = Intent(contexto, OpcoesViagem::class.java)
                 intent.putExtra("destino", destino)
                 intent.putExtra("dias", diasInt)
                 intent.putExtra("orcamento", orcamentoDouble)

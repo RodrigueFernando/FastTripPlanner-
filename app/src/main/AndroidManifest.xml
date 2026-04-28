@@ -12,7 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FastTripPlanner">
 
-        <activity android:name=".SegundaTela" />
+        <activity android:name=".OpcoesViagem" />
+        <activity android:name=".ResumoViagem" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
