@@ -28,7 +28,49 @@ class SegundaTela : ComponentActivity() {
 @Composable
 fun TelaSegunda(destino: String?, dias: Int, orcamento: Double) {
 
-    // Estado (agora no lugar certo)
+    // Estado
     var hospedagem by remember { mutableStateOf("Econômica") }
 
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(16.dp)
+    ) {
+
+        Text("Opções da Viagem")
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+        Text("Destino: ${destino ?: "Não informado"}")
+        Text("Dias: $dias")
+        Text("Orçamento diário: $orcamento")
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+        Text("Hospedagem:")
+
+        Row {
+            RadioButton(
+                selected = hospedagem == "Econômica",
+                onClick = { hospedagem = "Econômica" }
+            )
+            Text("Econômica")
+        }
+
+        Row {
+            RadioButton(
+                selected = hospedagem == "Conforto",
+                onClick = { hospedagem = "Conforto" }
+            )
+            Text("Conforto")
+        }
+
+        Row {
+            RadioButton(
+                selected = hospedagem == "Luxo",
+                onClick = { hospedagem = "Luxo" }
+            )
+            Text("Luxo")
+        }
+    }
 }
