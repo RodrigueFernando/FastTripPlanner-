@@ -37,10 +37,10 @@ fun TelaDadosViagem() {
     Column(
         modifier = Modifier.padding(16.dp)
     ) {
-
+        //Aplica um estilo de texto
         Text("Planejar Viagem", style = MaterialTheme.typography.titleLarge)
 
-      //espaço entre componentes
+      //espaço de altura entre componentes
         Spacer(modifier = Modifier.height(16.dp))
 
         // Campo destino
@@ -83,6 +83,7 @@ fun TelaDadosViagem() {
                     return@Button
                 }
 
+                //converter texto em números.
                 val diasInt = dias.toIntOrNull()
                 val orcamentoDouble = orcamento.toDoubleOrNull()
 
@@ -91,7 +92,7 @@ fun TelaDadosViagem() {
                     return@Button
                 }
 
-            // Cria uma Intent para abrir a SegundaTela e envia os dados da viagem (destino, dias e orçamento) como parâmetros
+            // Cria uma Intent para abrir a Segunda Tela e envia os dados da viagem (destino, dias e orçamento) como parâmetros
                 val intent = Intent(contexto, OpcoesViagem::class.java)
                 intent.putExtra("destino", destino)
                 intent.putExtra("dias", diasInt)

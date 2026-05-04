@@ -55,7 +55,7 @@ fun TelaSegunda(destino: String?, dias: Int, orcamento: Double) {
         Spacer(modifier = Modifier.height(16.dp))
 
         //  HOSPEDAGEM
-        Text("Hospedagem:")
+        Text("Hospedagem:", style = MaterialTheme.typography.titleLarge)
 
         Row {
             RadioButton(
