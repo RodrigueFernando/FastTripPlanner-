@@ -64,7 +64,7 @@ fun TelaResumo(
     // Cálculo do total
     val custoBase = dias * orcamento
 
-    //Define o multiplicador conforme a hospedagem
+    //Multiplicador hospedagem:
     val multiplicador = when (hospedagem) {
         "Econômica" -> 1.0
         "Conforto" -> 1.5

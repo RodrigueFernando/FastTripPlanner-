@@ -37,7 +37,7 @@ fun TelaDadosViagem() {
     Column(
         modifier = Modifier.padding(16.dp)
     ) {
-        //Aplica um estilo de texto
+        //
         Text("Planejar Viagem", style = MaterialTheme.typography.titleLarge)
 
       //espaço de altura entre componentes
